@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Roboto', sans-serif, serif;
   }
 /*   
   .container {
@@ -112,7 +112,6 @@ body {
   padding-right: 100px;
 }
 h1{
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -121,7 +120,6 @@ h1{
   color: #464650;
 }
 h2{
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -135,12 +133,15 @@ h2{
   display: flex;
   align-items: center;
 }
-.card-body{
+#card-body{
   display: flex;
   flex-direction: column;
   height: auto;
   width: 40%;
   align-items: center;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
 }
 #geradorform{
   display: flex;

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>eClientTools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="header">
@@ -24,10 +27,9 @@
         <div .class="subtitulo">
             <h2>Crie senhas fortes e seguras para <br> proteger as suas contas na internet.</h2>
         </div>
-                    <div class="card-body">
+                    <div id="card-body">
                         
                         <form id="geradorform" class="form">
-                            
                                 <!-- <h3 class="password-display" id="displaysenha">Sua senha aparecerá aqui<h3> -->
                                 
                                 <div class="copy-clipboard">
