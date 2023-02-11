@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family:'Roboto', sans-serif, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 #header{
   width: 100%;
@@ -44,6 +44,7 @@ body {
   padding-right: 100px;
 }
 h1{
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -52,6 +53,7 @@ h1{
   color: #464650;
 }
 h2{
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -65,7 +67,7 @@ h2{
   display: flex;
   align-items: center;
 }
-#card-body{
+.card-body{
   display: flex;
   flex-direction: column;
   height: auto;
@@ -128,9 +130,6 @@ h2{
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: #FFFFFF;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 17px;
 }
 #rangeValue{
   display: flex;
