@@ -27,33 +27,41 @@
                     <div class="card-body">
                         
                         <form id="geradorform" class="form">
-                                    <input class="form-control" id="displaysenha" readonly      placeholder="Sua senha aparecerá aqui"><button class="input-group-text" onclick="copyfunc()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></button>
-                                <div class="form-select">
-                                    <label for="quantidadenumeros">Quantidade de caracteres</label>
-                                    <input type="range" min="8" max="20" value="10"  class="form-range" id="quantidadeletras">
-                                    <!-- <input type="number" class="form-control" min="8" max="20" value="10" id="quantidadenumeros"> -->
-                                <div class="input-group bootstrap-touchspin bootstrap-touchspin-injected"><span class="input-group-btn input-group-prepend"><button class="btn btn-primary bootstrap-touchspin-down" id="diminuirQuantidade" type="button">-</button></span><input type="number" class="form-control" min="8" max="20" value="10" id="demo3"><span class="input-group-btn input-group-append"><button class="btn btn-primary bootstrap-touchspin-up" id="aumentaQuantidade" type="button">+</button></span></div>
-                            <div class="multiselecao mt-4">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input success check-light-success" type="checkbox" id="incluirmaiusculas" value="option1" >
-                                    <label class="form-check-label" for="incluirmaiusculas">Incluir Maiúsculas</label>
+                                <div id="senhacontainer">
+                                    <input class="form-control" id="displaysenha" readonly placeholder="Sua senha aparecerá aqui"><button class="botaocopy" onclick="copyfunc()"><label>Copiar</label><img src="Vector (1).png" alt=""></button>
+                                </div> 
+                                <div class="labelcar">
+                                    <label for="quantidadenumeros">Quantidade de caracter:</label>
                                 </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input success check-light-success" type="checkbox" id="incluirnumeros" value="option1" >
-                                        <label class="form-check-label" for="incluirnumeros">Incluir Números</label>
+                                    <div class="caracter">   
+                                    <div id="rangeValue"><input type="number" readonly class="form-control" min="8" max="20" value="10" id="demo3"></div>
+                                    <!-- <input type="number" class="form-control" min="8" max="20" value="10" id="quantidadenumeros"> -->
+                                <div class="input-char"><button class="input-menos" id="diminuirQuantidade" type="button">-</button><input type="range" min="8" max="20" value="10"  class="form-range" id="quantidadeletras"><button class="input-mais" id="aumentaQuantidade" type="button">+</button></span></div>
+                           
+                                <div class="labelcar">
+                                    <label for="quantidadenumeros">Caracteres Ultilizados:</label>
+                                </div> 
+                                <div class="multiselecao">
+                                    <div class="checkbutton">
+                                        <input class="check" type="checkbox" id="incluirmaiusculas" value="option1" >
+                                        <label class="label-check" for="incluirmaiusculas">ABCabc</label>
+                                    </div>
+                                    <div class="checkbutton">
+                                        <input class="check" type="checkbox" id="incluirnumeros" value="option1" >
+                                        <label class="label-check" for="incluirnumeros">1234</label>
                                     </div>
                                     
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input success check-light-success" type="checkbox" id="incluirsimbolos" value="option1" >
-                                        <label class="form-check-label" for="incluirsimbolos">Incluir Símbolos</label>
+                                    <div class="checkbutton">
+                                        <input class="check" type="checkbox" id="incluirsimbolos" value="option1" >
+                                        <label class="label-check" for="incluirsimbolos">!@#*$</label>
                                     </div>
                             </div>
-                            <button type="submit" class="btn btn-success">Gerar a senha</button>
+                            <div id="conteiner-btn">
+                                <button type="submit" id="btn-gerar-senha">Gerar a senha</button>
+                            </div>
                         </form> 
-                       
-                    <!-- The button used to copy the text -->
+                        
                     </div>
-    
         <script src="gerador.js"></script>
 </body>
 </html>
