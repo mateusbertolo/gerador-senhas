@@ -1,13 +1,14 @@
 
 
+
+
 body {
-    background: #FFFFFF;
+    background: #F5F5F5;
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 #header{
   width: 100%;
@@ -47,21 +48,20 @@ h1{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 36px;
   line-height: 42px;
-
   color: #464650;
+
 }
 h2{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 21px;
   text-align: center;
 
   color: #464650;
-
 }
 .subtitulo{
   display: flex;
@@ -73,7 +73,9 @@ h2{
   height: auto;
   width: 40%;
   min-height: 500px;
+  background: #FFFFFF;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
 }
 #geradorform{
   display: flex;  
@@ -81,6 +83,7 @@ h2{
   align-items: center;
   width: 100%;
   height: 100%;
+  margin-top: 30px;
 }
 #senhacontainer{
   display: flex;
@@ -90,18 +93,36 @@ h2{
   border-radius: 10px;
 }
 #displaysenha{
+  width: 300px;
+  height: 40px;
   border: 0;
   margin: 2px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+/* identical to box height */
+
+text-align: center;
+
+color: #515151;
 }
 .botaocopy{
+  width: 100px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 0;
   background: #00B4FF;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   color: #FFFFFF;
-  align-items: center;
+  
   margin: 2px;
+}
+.botaocopy :hover{
+  cursor: pointer;
 }
 .botaocopy img{
   width: 21px;
@@ -114,6 +135,13 @@ h2{
   flex-direction: column;
   padding-top: 30px;
   padding-bottom: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #464650;
 }
 
 #demo3 {
@@ -126,6 +154,10 @@ h2{
   border: 0;
   margin: 0;
 }
+#demo3{
+  cursor: unset;
+  user-select: none;
+}
 .input-char{
   display: flex;
   flex-direction: row;
@@ -137,14 +169,11 @@ h2{
 }
 #quantidadeletras {
   width: 400px;
-  height: 15px;
+  height: 3px;
   background: #111;
   outline: none;
   border-radius: 15px;
-  overflow: hidden;
   background: #FFFFFF;
-  border-radius: 50px;
-  
 }
 #quantidadeletras::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -154,7 +183,8 @@ h2{
   background: #00B4FF;
   cursor: pointer;
   border: 4px solid #333;
-  box-shadow: -407px 0 0 400px #00B4FF;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  
 }
 .input-mais{
   width: 29px;
@@ -190,6 +220,13 @@ h2{
 }
 .label-check{
   padding-left: 5px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #515151;
 }
 #btn-gerar-senha{
   height: 50px;
@@ -198,9 +235,20 @@ h2{
   border-color: #fff;
   border-radius: 10px;
   color: #FFFFFF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
 }
 #conteiner-btn{
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
+/* .form-range{
+  /* -webkit-appearance: none;
+  margin: 0 auto;
+  appearance: none; 
+}*/
